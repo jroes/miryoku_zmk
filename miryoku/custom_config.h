@@ -1,12 +1,6 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-// add Estonian letters
-
-#include "zmk-helpers/helper.h"
-
-#include "zmk-helpers/unicode-chars/german_alt.dtsi"
-#include "zmk-helpers/unicode-chars/currency.dtsi"
 
 #define MIRYOKU_ALTERNATIVES_SYM \
 &kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
