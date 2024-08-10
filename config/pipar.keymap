@@ -8,5 +8,5 @@
 // add Estonian letters
 
 #include "../miryoku/zmk-helpers/helper.h"
-#include "../miryoku/zmk-helpers/unicode-chars/german_alt.dtsi"
+#include "../miryoku/zmk-helpers/unicode-chars/german.dtsi"
 #include "../miryoku/zmk-helpers/unicode-chars/currency.dtsi"
