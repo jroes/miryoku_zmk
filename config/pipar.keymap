@@ -5,8 +5,50 @@
 #include "../miryoku/mapping/36/minidox.h"
 #include "../miryoku/miryoku.dtsi"
 
-// add Estonian letters
+/ {
 
-#include "../miryoku/zmk-helpers/helper.h"
-#include "../miryoku/zmk-helpers/unicode-chars/german.dtsi"
-#include "../miryoku/zmk-helpers/unicode-chars/currency.dtsi"
+    macros {
+        // add Estonian letters
+
+        est_ae: est_ae {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N5>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        est_oe: est_oe {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        est_ui: est_ui {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        est_eur: est_eur {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+};
