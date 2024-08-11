@@ -1,0 +1,6 @@
+/* Estonian umlauts */
+
+ZMK_UNICODE_PAIR(   et_ot,      N0, N0,  F, N5,    N0, N0,  D, N5) // õ/Õ
+ZMK_UNICODE_PAIR(   et_ae,      N0, N0,  E, N4,    N0, N0,  C, N4) // ä/Ä
+ZMK_UNICODE_PAIR(   et_oe,      N0, N0,  F, N6,    N0, N0,  D, N6) // ö/Ö
+ZMK_UNICODE_PAIR(   et_ue,      N0, N0,  F,  C,    N0, N0,  D,  C) // ü/Ü
