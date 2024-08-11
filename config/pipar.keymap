@@ -1,6 +1,8 @@
 // Copyright 2024 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+#define HOST_OS 2
+
 #include "../miryoku/zmk-helpers/helper.h"
 #include "../miryoku/zmk-helpers/unicode-chars/estonian.dtsi"
 #include "../miryoku/zmk-helpers/unicode-chars/currency.dtsi"
