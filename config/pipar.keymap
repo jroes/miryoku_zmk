@@ -12,6 +12,7 @@
 
         est_ae: est_ae {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
@@ -22,6 +23,7 @@
         };
         est_oe: est_oe {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
@@ -32,6 +34,7 @@
         };
         est_ui: est_ui {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
@@ -42,6 +45,7 @@
         };
         est_eur: est_eur {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
