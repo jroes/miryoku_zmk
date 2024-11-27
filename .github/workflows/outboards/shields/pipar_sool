@@ -3,5 +3,5 @@
 
 outboard_repository=RasmusKoit/pipar
 outboard_ref=master
-outboard_from=config/boards/shields/pipar
-outboard_to=boards/shields/pipar
+outboard_from=config/boards/shields/pipar_sool
+outboard_to=boards/shields/pipar_sool
