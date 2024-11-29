@@ -13,12 +13,12 @@ jobs:
           - dvorak
           - qwerty
         custom_config:
-          - "[]"
+          - '["#define MIRYOKU_ALPHAS_COLEMAKDH"]'
           - '["#define MIRYOKU_ALPHAS_DVORAK"]'
           - '["#define MIRYOKU_ALPHAS_QWERTY"]'
         include:
           - alphas: colemakdh
-            custom_config: "[]"
+            custom_config: '["#define MIRYOKU_ALPHAS_COLEMAKDH"]'
           - alphas: dvorak
             custom_config: '["#define MIRYOKU_ALPHAS_DVORAK"]'
           - alphas: qwerty
