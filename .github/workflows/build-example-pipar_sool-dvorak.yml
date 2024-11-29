@@ -12,4 +12,4 @@ jobs:
       shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
       alphas: 'dvorak'
       clipboard: 'mac'
-      custom_config: '#define MIRYOKU_ALPHAS_DVORAK'
+      custom_config: '["#define MIRYOKU_ALPHAS_DVORAK"]'
