@@ -28,5 +28,5 @@ jobs:
     with:
       board: '["seeeduino_xiao_ble"]'
       shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
-      alphas: ${{ matrix.alphas }}
+      alphas: '${{ matrix.alphas }}'
       custom_config: ${{ matrix.custom_config }}
