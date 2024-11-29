@@ -1,7 +1,7 @@
 # Copyright 2021 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Example Pipar Sool'
+name: 'Build Example Pipar Sool Dvorak for MAC'
 on: workflow_dispatch
 jobs:
   build:
@@ -10,6 +10,6 @@ jobs:
     with:
       board: '["seeeduino_xiao_ble"]'
       shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
-      alphas: 'dvorak'
-      clipboard: 'mac'
+      alphas: '["dvorak"]'
+      clipboard: '["mac"]'
       custom_config: '["#define MIRYOKU_ALPHAS_DVORAK"]'
