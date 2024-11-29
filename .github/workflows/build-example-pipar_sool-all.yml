@@ -9,24 +9,24 @@ jobs:
     strategy:
       matrix:
         alphas:
-          - colemakdh
+          - default
           - dvorak
           - qwerty
         custom_config:
-          - '["#define MIRYOKU_ALPHAS_COLEMAKDH"]'
-          - '["#define MIRYOKU_ALPHAS_DVORAK"]'
-          - '["#define MIRYOKU_ALPHAS_QWERTY"]'
+          - ["#define MIRYOKU_ALPHAS_COLEMAKDH"]
+          - ["#define MIRYOKU_ALPHAS_DVORAK"]
+          - ["#define MIRYOKU_ALPHAS_QWERTY"]
         include:
-          - alphas: colemakdh
-            custom_config: '["#define MIRYOKU_ALPHAS_COLEMAKDH"]'
+          - alphas: default
+            custom_config: ["#define MIRYOKU_ALPHAS_COLEMAKDH"]
           - alphas: dvorak
-            custom_config: '["#define MIRYOKU_ALPHAS_DVORAK"]'
+            custom_config: ["#define MIRYOKU_ALPHAS_DVORAK"]
           - alphas: qwerty
-            custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
+            custom_config: ["#define MIRYOKU_ALPHAS_QWERTY"]
     uses: ./.github/workflows/pipar-main.yml
     secrets: inherit
     with:
       board: '["seeeduino_xiao_ble"]'
       shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
       alphas: '${{ matrix.alphas }}'
-      custom_config: ${{ matrix.custom_config }}
+      custom_config: ${{ toJson(matrix.custom_config) }}
