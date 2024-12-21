@@ -371,4 +371,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.main.outputs.run_name }}
-          path: ${{ github.workspace }}/artifacts
+          path: ${{ steps.main.outputs.artifact_dir }}
