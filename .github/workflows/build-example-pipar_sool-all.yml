@@ -9,7 +9,8 @@ on: workflow_dispatch
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    uses: ./.github/workflows/pipar-main.yml
+    secrets: inherit
     strategy:
       matrix:
         config:
@@ -17,16 +18,10 @@ jobs:
             alphas: '["dvorak"]'
           - custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
             alphas: '["qwerty"]'
-          - custom_config: '["#define MIRYOKU_ALPHAS_COLEMAKDH"]'
-            alphas: '["colemakdh"]'
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Run build for Pipar Sool
-        uses: ./.github/workflows/pipar-main.yml
-        with:
-          board: '["seeeduino_xiao_ble"]'
-          shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
-          custom_config: ${{ matrix.config.custom_config }}
-          alphas: ${{ matrix.config.alphas }}
+          - custom_config: '["#define MIRYOKU_ALPHAS_COLEMAK"]'
+            alphas: '["colemak"]'
+    with:
+      board: '["seeeduino_xiao_ble"]'
+      shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
+      custom_config: ${{ matrix.config.custom_config }}
+      alphas: ${{ matrix.config.alphas }}
