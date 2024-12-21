@@ -9,7 +9,7 @@ on: workflow_dispatch
 
 jobs:
   build:
-    name: Pipar & Sool - ${{ matrix.config.alphas }},${{ matrix.config.clipboard }}
+    name: Pipar & Sool - ${{ fromJSON(matrix.config.alphas) }},${{ fromJSON(matrix.config.clipboard) }}
     uses: ./.github/workflows/pipar-main.yml
     secrets: inherit
     strategy:
