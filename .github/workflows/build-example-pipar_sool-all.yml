@@ -1,32 +1,32 @@
 # Copyright 2021 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build all Pipar Sool variants'
+# Copyright 2021 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Pipar Sool with Matrix'
 on: workflow_dispatch
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        alphas:
-          - default
-          - dvorak
-          - qwerty
-        custom_config:
-          - ["#define MIRYOKU_ALPHAS_COLEMAKDH"]
-          - ["#define MIRYOKU_ALPHAS_DVORAK"]
-          - ["#define MIRYOKU_ALPHAS_QWERTY"]
-        include:
-          - alphas: default
-            custom_config: ["#define MIRYOKU_ALPHAS_COLEMAKDH"]
-          - alphas: dvorak
-            custom_config: ["#define MIRYOKU_ALPHAS_DVORAK"]
-          - alphas: qwerty
-            custom_config: ["#define MIRYOKU_ALPHAS_QWERTY"]
-    uses: ./.github/workflows/pipar-main.yml
-    secrets: inherit
-    with:
-      board: '["seeeduino_xiao_ble"]'
-      shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
-      alphas: '${{ matrix.alphas }}'
-      custom_config: ${{ toJson(matrix.custom_config) }}
+        config:
+          - custom_config: '["#define MIRYOKU_ALPHAS_DVORAK"]'
+            alphas: '["dvorak"]'
+          - custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
+            alphas: '["qwerty"]'
+          - custom_config: '["#define MIRYOKU_ALPHAS_COLEMAKDH"]'
+            alphas: '["colemakdh"]'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run build for Pipar Sool
+        uses: ./.github/workflows/pipar-main.yml
+        with:
+          board: '["seeeduino_xiao_ble"]'
+          shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
+          custom_config: ${{ matrix.config.custom_config }}
+          alphas: ${{ matrix.config.alphas }}
