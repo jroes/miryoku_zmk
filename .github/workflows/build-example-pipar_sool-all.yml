@@ -9,7 +9,7 @@ on: workflow_dispatch
 
 jobs:
   build:
-    name: Pipar & Sool - ${{ matrix.config.clipboard }}
+    name: Pipar & Sool - ${{ matrix.config.alphas }},${{ matrix.config.clipboard }}
     uses: ./.github/workflows/pipar-main.yml
     secrets: inherit
     strategy:
@@ -38,3 +38,13 @@ jobs:
       shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
       custom_config: ${{ matrix.config.custom_config }}
       alphas: ${{ matrix.config.alphas }}
+  
+  merge:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Merge Artifacts
+        uses: actions/upload-artifact/merge@v4
+        with:
+          name: pipar_sool-firmwares
+          pattern: miryoku_zmk-pipar_sool_*

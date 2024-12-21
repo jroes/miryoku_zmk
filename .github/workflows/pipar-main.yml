@@ -372,5 +372,3 @@ jobs:
         with:
           name: ${{ steps.main.outputs.run_name }}
           path: ${{ github.workspace }}/artifacts
-          compression-level: 0
-
