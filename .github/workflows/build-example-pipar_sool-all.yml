@@ -9,6 +9,7 @@ on: workflow_dispatch
 
 jobs:
   build:
+    name: Pipar & Sool - ${{ matrix.config.alphas }}
     uses: ./.github/workflows/pipar-main.yml
     secrets: inherit
     strategy:
@@ -16,10 +17,22 @@ jobs:
         config:
           - custom_config: '["#define MIRYOKU_ALPHAS_DVORAK"]'
             alphas: '["dvorak"]'
+            clipboard: '["default"]'
           - custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
             alphas: '["qwerty"]'
-          - custom_config: '["#define MIRYOKU_ALPHAS_COLEMAK"]'
-            alphas: '["colemak"]'
+            clipboard: '["default"]'
+          - custom_config: '["#define MIRYOKU_ALPHAS_COLEMAKDH"]'
+            alphas: '["colemakdh"]'
+            clipboard: '["default"]'
+          - custom_config: '["#define MIRYOKU_ALPHAS_DVORAK\n#define MIRYOKU_CLIPBOARD_MAC"]'
+            alphas: '["dvorak"]'
+            clipboard: '["mac"]'
+          - custom_config: '["#define MIRYOKU_ALPHAS_QWERTY\n#define MIRYOKU_CLIPBOARD_MAC"]'
+            alphas: '["qwerty"]'
+            clipboard: '["mac"]'
+          - custom_config: '["#define MIRYOKU_ALPHAS_COLEMAKDH\n#define MIRYOKU_CLIPBOARD_MAC"]'
+            alphas: '["colemakdh"]'
+            clipboard: '["mac"]'
     with:
       board: '["seeeduino_xiao_ble"]'
       shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'

@@ -130,9 +130,9 @@ jobs:
             esac
           done
 
-          artifact_dir="${GITHUB_WORKSPACE}/artifacts"
+          artifact_dir="${GITHUB_WORKSPACE}/artifacts/${{ matrix.alphas }}/${{ matrix.clipboard }}"
           echo "artifact_dir=$artifact_dir" >> $GITHUB_OUTPUT
-          mkdir "$artifact_dir"
+          mkdir -p "$artifact_dir"
 
           test "$MIRYOKU_DEBUG" = 'MIRYOKU_DEBUG_TRUE' && cp "$configfile" "$artifact_dir"
           
