@@ -47,6 +47,6 @@ jobs:
       - name: Merge Artifacts
         uses: actions/upload-artifact/merge@v4
         with:
-          name: pipar_sool-firmwares
+          name: miryoku_zmk_pipar_sool-firmwares
           pattern: miryoku_zmk-pipar_sool_*
           delete-merged: true
