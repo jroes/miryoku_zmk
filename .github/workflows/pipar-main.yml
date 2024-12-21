@@ -130,7 +130,7 @@ jobs:
             esac
           done
 
-          artifact_dir="${GITHUB_WORKSPACE}/artifacts/${{ matrix.alphas }}/${{ matrix.clipboard }}"
+          artifact_dir="${GITHUB_WORKSPACE}/artifacts/${{ matrix.alphas }}/${{ matrix.clipboard }}/${{ matrix.shield }}"
           echo "artifact_dir=$artifact_dir" >> $GITHUB_OUTPUT
           mkdir -p "$artifact_dir"
 
