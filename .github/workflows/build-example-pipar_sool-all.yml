@@ -21,7 +21,7 @@ jobs:
           - custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
             alphas: '["qwerty"]'
             clipboard: '["default"]'
-          - custom_config: '["#define MIRYOKU_ALPHAS_COLEMAKDH"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM"]'
             alphas: '["colemakdh"]'
             clipboard: '["default"]'
           - custom_config: '["#define MIRYOKU_ALPHAS_DVORAK\n#define MIRYOKU_CLIPBOARD_MAC"]'
