@@ -57,3 +57,7 @@ MIRYOKU_LAYER_LIST
 #else
   #include "miryoku_behaviors.dtsi"
 #endif
+
+#if defined (MIRYOKU_TIMELESS_HRM)
+  #include "miryoku_timeless_hrm.dtsi"
+#endif

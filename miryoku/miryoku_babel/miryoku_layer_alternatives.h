@@ -5,6 +5,125 @@
 
 #pragma once
 
+#define MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP_THRM \
+&kp A,             &kp Z,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_HRM_L(LGUI, Q),     U_HRM_L(LALT, S),     U_HRM_L(LCTRL, D),    U_HRM_L(LSHFT, F),    &kp G,             &kp H,             U_HRM_R(LSHFT, J),    U_HRM_R(LCTRL, K),    U_HRM_R(LALT, L),     U_HRM_R(LGUI, M),     \
+U_LT(U_BUTTON, W), U_HRM_L(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp COMMA,         &kp DOT,           U_HRM_R(RALT, SLASH), U_LT(U_BUTTON, SQT),\
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_FLIP_THRM \
+&kp Q,             &kp H,             &kp O,             &kp U,             &kp X,             &kp G,             &kp C,             &kp R,             &kp F,             &kp Z,             \
+U_HRM_L(LGUI, Y),     U_HRM_L(LALT, I),     U_HRM_L(LCTRL, E),    U_HRM_L(LSHFT, A),    &kp DOT,           &kp D,             U_HRM_R(LSHFT, S),    U_HRM_R(LCTRL, T),    U_HRM_R(LALT, N),     U_HRM_R(LGUI, B),     \
+U_LT(U_BUTTON, J), U_HRM_L(RALT, SLASH), &kp COMMA,         &kp K,             &kp SQT,           &kp W,             &kp M,             &kp L,             U_HRM_R(RALT, P),     U_LT(U_BUTTON, V), \
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_COLEMAK_FLIP_THRM \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, R),     U_HRM_L(LCTRL, S),    U_HRM_L(LSHFT, T),    &kp D,             &kp H,             U_HRM_R(LSHFT, N),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, I),     U_HRM_R(LGUI, O),     \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_COLEMAKDH_FLIP_THRM \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, R),     U_HRM_L(LCTRL, S),    U_HRM_L(LSHFT, T),    &kp G,             &kp M,             U_HRM_R(LSHFT, N),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, I),     U_HRM_R(LGUI, O),     \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_COLEMAKDHK_FLIP_THRM \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, R),     U_HRM_L(LCTRL, S),    U_HRM_L(LSHFT, T),    &kp G,             &kp K,             U_HRM_R(LSHFT, N),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, I),     U_HRM_R(LGUI, O),     \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp C,             &kp D,             &kp V,             &kp M,             &kp H,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_DVORAK_FLIP_THRM \
+&kp SQT,           &kp COMMA,         &kp DOT,           &kp P,             &kp Y,             &kp F,             &kp G,             &kp C,             &kp R,             &kp L,             \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, O),     U_HRM_L(LCTRL, E),    U_HRM_L(LSHFT, U),    &kp I,             &kp D,             U_HRM_R(LSHFT, H),    U_HRM_R(LCTRL, T),    U_HRM_R(LALT, N),     U_HRM_R(LGUI, S),     \
+U_LT(U_BUTTON, SLASH),U_HRM_L(RALT, Q),     &kp J,             &kp K,             &kp X,             &kp B,             &kp M,             &kp W,             U_HRM_R(RALT, V),     U_LT(U_BUTTON, Z), \
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_HALMAK_FLIP_THRM \
+&kp W,             &kp L,             &kp R,             &kp B,             &kp Z,             &kp SQT,           &kp Q,             &kp U,             &kp D,             &kp J,             \
+U_HRM_L(LGUI, S),     U_HRM_L(LALT, H),     U_HRM_L(LCTRL, N),    U_HRM_L(LSHFT, T),    &kp COMMA,         &kp DOT,           U_HRM_R(LSHFT, A),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, O),     U_HRM_R(LGUI, I),     \
+U_LT(U_BUTTON, F), U_HRM_L(RALT, M),     &kp V,             &kp C,             &kp SLASH,         &kp G,             &kp P,             &kp X,             U_HRM_R(RALT, K),     U_LT(U_BUTTON, Y), \
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_WORKMAN_FLIP_THRM \
+&kp Q,             &kp D,             &kp R,             &kp W,             &kp B,             &kp J,             &kp F,             &kp U,             &kp P,             &kp SQT,           \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, S),     U_HRM_L(LCTRL, H),    U_HRM_L(LSHFT, T),    &kp G,             &kp Y,             U_HRM_R(LSHFT, N),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, O),     U_HRM_R(LGUI, I),     \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp M,             &kp C,             &kp V,             &kp K,             &kp L,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_QWERTY_FLIP_THRM \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, S),     U_HRM_L(LCTRL, D),    U_HRM_L(LSHFT, F),    &kp G,             &kp H,             U_HRM_R(LSHFT, J),    U_HRM_R(LCTRL, K),    U_HRM_R(LALT, L),     U_HRM_R(LGUI, SQT),   \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_QWERTZ_FLIP_THRM \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, S),     U_HRM_L(LCTRL, D),    U_HRM_L(LSHFT, F),    &kp G,             &kp H,             U_HRM_R(LSHFT, J),    U_HRM_R(LCTRL, K),    U_HRM_R(LALT, L),     U_HRM_R(LGUI, SQT),   \
+U_LT(U_BUTTON, Y), U_HRM_L(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_FUN, DEL),  U_LT(U_NUM, BSPC), U_LT(U_SYM, RET),  U_LT(U_MOUSE, TAB),U_LT(U_NAV, SPACE),U_LT(U_MEDIA, ESC),U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_AZERTY_THRM \
+&kp A,             &kp Z,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_HRM_L(LGUI, Q),     U_HRM_L(LALT, S),     U_HRM_L(LCTRL, D),    U_HRM_L(LSHFT, F),    &kp G,             &kp H,             U_HRM_R(LSHFT, J),    U_HRM_R(LCTRL, K),    U_HRM_R(LALT, L),     U_HRM_R(LGUI, M),     \
+U_LT(U_BUTTON, W), U_HRM_L(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp COMMA,         &kp DOT,           U_HRM_R(RALT, SLASH), U_LT(U_BUTTON, SQT),\
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_BEAKL15_THRM \
+&kp Q,             &kp H,             &kp O,             &kp U,             &kp X,             &kp G,             &kp C,             &kp R,             &kp F,             &kp Z,             \
+U_HRM_L(LGUI, Y),     U_HRM_L(LALT, I),     U_HRM_L(LCTRL, E),    U_HRM_L(LSHFT, A),    &kp DOT,           &kp D,             U_HRM_R(LSHFT, S),    U_HRM_R(LCTRL, T),    U_HRM_R(LALT, N),     U_HRM_R(LGUI, B),     \
+U_LT(U_BUTTON, J), U_HRM_L(RALT, SLASH), &kp COMMA,         &kp K,             &kp SQT,           &kp W,             &kp M,             &kp L,             U_HRM_R(RALT, P),     U_LT(U_BUTTON, V), \
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_COLEMAK_THRM \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, R),     U_HRM_L(LCTRL, S),    U_HRM_L(LSHFT, T),    &kp D,             &kp H,             U_HRM_R(LSHFT, N),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, I),     U_HRM_R(LGUI, O),     \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_COLEMAKDH_THRM \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, R),     U_HRM_L(LCTRL, S),    U_HRM_L(LSHFT, T),    &kp G,             &kp M,             U_HRM_R(LSHFT, N),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, I),     U_HRM_R(LGUI, O),     \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_COLEMAKDHK_THRM \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, R),     U_HRM_L(LCTRL, S),    U_HRM_L(LSHFT, T),    &kp G,             &kp K,             U_HRM_R(LSHFT, N),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, I),     U_HRM_R(LGUI, O),     \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp C,             &kp D,             &kp V,             &kp M,             &kp H,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_DVORAK_THRM \
+&kp SQT,           &kp COMMA,         &kp DOT,           &kp P,             &kp Y,             &kp F,             &kp G,             &kp C,             &kp R,             &kp L,             \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, O),     U_HRM_L(LCTRL, E),    U_HRM_L(LSHFT, U),    &kp I,             &kp D,             U_HRM_R(LSHFT, H),    U_HRM_R(LCTRL, T),    U_HRM_R(LALT, N),     U_HRM_R(LGUI, S),     \
+U_LT(U_BUTTON, SLASH),U_HRM_L(RALT, Q),     &kp J,             &kp K,             &kp X,             &kp B,             &kp M,             &kp W,             U_HRM_R(RALT, V),     U_LT(U_BUTTON, Z), \
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_HALMAK_THRM \
+&kp W,             &kp L,             &kp R,             &kp B,             &kp Z,             &kp SQT,           &kp Q,             &kp U,             &kp D,             &kp J,             \
+U_HRM_L(LGUI, S),     U_HRM_L(LALT, H),     U_HRM_L(LCTRL, N),    U_HRM_L(LSHFT, T),    &kp COMMA,         &kp DOT,           U_HRM_R(LSHFT, A),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, O),     U_HRM_R(LGUI, I),     \
+U_LT(U_BUTTON, F), U_HRM_L(RALT, M),     &kp V,             &kp C,             &kp SLASH,         &kp G,             &kp P,             &kp X,             U_HRM_R(RALT, K),     U_LT(U_BUTTON, Y), \
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_WORKMAN_THRM \
+&kp Q,             &kp D,             &kp R,             &kp W,             &kp B,             &kp J,             &kp F,             &kp U,             &kp P,             &kp SQT,           \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, S),     U_HRM_L(LCTRL, H),    U_HRM_L(LSHFT, T),    &kp G,             &kp Y,             U_HRM_R(LSHFT, N),    U_HRM_R(LCTRL, E),    U_HRM_R(LALT, O),     U_HRM_R(LGUI, I),     \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp M,             &kp C,             &kp V,             &kp K,             &kp L,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_QWERTY_THRM \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, S),     U_HRM_L(LCTRL, D),    U_HRM_L(LSHFT, F),    &kp G,             &kp H,             U_HRM_R(LSHFT, J),    U_HRM_R(LCTRL, K),    U_HRM_R(LALT, L),     U_HRM_R(LGUI, SQT),   \
+U_LT(U_BUTTON, Z), U_HRM_L(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_BASE_QWERTZ_THRM \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_HRM_L(LGUI, A),     U_HRM_L(LALT, S),     U_HRM_L(LCTRL, D),    U_HRM_L(LSHFT, F),    &kp G,             &kp H,             U_HRM_R(LSHFT, J),    U_HRM_R(LCTRL, K),    U_HRM_R(LALT, L),     U_HRM_R(LGUI, SQT),   \
+U_LT(U_BUTTON, Y), U_HRM_L(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_HRM_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP \
 &kp A,             &kp Z,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -125,7 +244,6 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT
 U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp G,             &kp H,             U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SQT),   \
 U_LT(U_BUTTON, Y), U_MT(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
-
 
 #define MIRYOKU_ALTERNATIVES_TAP_AZERTY_FLIP \
 &kp A,             &kp Z,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
