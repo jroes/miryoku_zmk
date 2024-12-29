@@ -2,7 +2,6 @@
   behaviors {
     u_hrm_l: u_hrm_l {
       compatible = "zmk,behavior-hold-tap";
-      label = "Timeless Homerow Mods Left";
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
       flavor = "balanced";
@@ -14,7 +13,6 @@
     };
     u_hrm_r: u_hrm_r {
       compatible = "zmk,behavior-hold-tap";
-      label = "Homerow Mods Right";
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
       flavor = "balanced";
