@@ -15,22 +15,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - custom_config: '["#define MIRYOKU_ALPHAS_DVORAK"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM"]'
             alphas: '["dvorak"]'
             clipboard: '["default"]'
-          - custom_config: '["#define MIRYOKU_ALPHAS_QWERTY"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM"]'
             alphas: '["qwerty"]'
             clipboard: '["default"]'
           - custom_config: '["#define MIRYOKU_TIMELESS_HRM"]'
             alphas: '["colemakdh"]'
             clipboard: '["default"]'
-          - custom_config: '["#define MIRYOKU_ALPHAS_DVORAK\n#define MIRYOKU_CLIPBOARD_MAC"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM\n#define MIRYOKU_CLIPBOARD_MAC"]'
             alphas: '["dvorak"]'
             clipboard: '["mac"]'
-          - custom_config: '["#define MIRYOKU_ALPHAS_QWERTY\n#define MIRYOKU_CLIPBOARD_MAC"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM\n#define MIRYOKU_CLIPBOARD_MAC"]'
             alphas: '["qwerty"]'
             clipboard: '["mac"]'
-          - custom_config: '["#define MIRYOKU_ALPHAS_COLEMAKDH\n#define MIRYOKU_CLIPBOARD_MAC"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM\n#define MIRYOKU_CLIPBOARD_MAC"]'
             alphas: '["colemakdh"]'
             clipboard: '["mac"]'
     with:
