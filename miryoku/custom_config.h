@@ -7,5 +7,3 @@
     U_MT(LSHFT, Z),    &kp A,             &kp S,             &kp D,             U_MT(TAB, F),      &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
     U_NP,              U_NP,              U_MT(LGUI, ESC),   U_MT(K, SPACE),    U_MT(LALT, B),     U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
-#define MIRYOKU_TIMELESS_HRM
-
