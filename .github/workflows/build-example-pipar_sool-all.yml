@@ -39,6 +39,8 @@ jobs:
       custom_config: ${{ matrix.config.custom_config }}
       alphas: ${{ matrix.config.alphas }}
       clipboard: ${{ matrix.config.clipboard }}
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
+      branches: '["zmkfirmware/zmk/main"]'
   
   merge:
     runs-on: ubuntu-latest
