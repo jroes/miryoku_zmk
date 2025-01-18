@@ -3,3 +3,4 @@
 
 // Use standard media keys (vi nav will change these)
 #define MIRYOKU_ALTERNATIVES_MEDIA_VI MIRYOKU_ALTERNATIVES_MEDIA
+#define MIRYOKU_KLUDGE_SOFT_OFF
