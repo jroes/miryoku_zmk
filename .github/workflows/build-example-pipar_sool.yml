@@ -9,6 +9,4 @@ jobs:
     secrets: inherit
     with:
       board: '["seeeduino_xiao_ble"]'
-      shield: '["pipar_sool_dongle prospector_adapter","pipar_sool_left","pipar_sool_right"]'
-      kconfig: '["CONFIG_ZMK_DISPLAY=y", "CONFIG_PROSPECTOR_USE_AMBIENT_LIGHT_SENSOR=n", "CONFIG_PROSPECTOR_FIXED_BRIGHTNESS=50"]'
-      modules: '["carrefinho/prospector-zmk-module/main"]'
+      shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
