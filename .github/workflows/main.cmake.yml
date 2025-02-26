@@ -70,7 +70,7 @@ jobs:
         kconfig: ${{ fromJSON(inputs.kconfig) }}
         branches: ${{ fromJSON(inputs.branches) }}
         modules: ${{ fromJSON(inputs.modules) }}
-	cmake_args: ${{ fromJSON(inputs.cmake_args) }}
+        cmake_args: ${{ fromJSON(inputs.cmake_args) }}
     env:
       MIRYOKU_DEBUG: ${{ secrets.MIRYOKU_DEBUG }}
     steps:
