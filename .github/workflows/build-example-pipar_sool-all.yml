@@ -1,0 +1,54 @@
+# Copyright 2021 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+# Copyright 2021 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Pipar Sool with Matrix'
+on: workflow_dispatch
+
+jobs:
+  build:
+    name: Pipar & Sool - ${{ fromJSON(matrix.config.alphas) }},${{ fromJSON(matrix.config.clipboard) }}
+    uses: ./.github/workflows/pipar-main.yml
+    secrets: inherit
+    strategy:
+      matrix:
+        config:
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM"]'
+            alphas: '["dvorak"]'
+            clipboard: '["default"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM"]'
+            alphas: '["qwerty"]'
+            clipboard: '["default"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM"]'
+            alphas: '["colemakdh"]'
+            clipboard: '["default"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM\n#define MIRYOKU_CLIPBOARD_MAC"]'
+            alphas: '["dvorak"]'
+            clipboard: '["mac"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM\n#define MIRYOKU_CLIPBOARD_MAC"]'
+            alphas: '["qwerty"]'
+            clipboard: '["mac"]'
+          - custom_config: '["#define MIRYOKU_TIMELESS_HRM\n#define MIRYOKU_CLIPBOARD_MAC"]'
+            alphas: '["colemakdh"]'
+            clipboard: '["mac"]'
+    with:
+      board: '["seeeduino_xiao_ble"]'
+      shield: '["pipar_sool_dongle","pipar_sool_left","pipar_sool_right"]'
+      custom_config: ${{ matrix.config.custom_config }}
+      alphas: ${{ matrix.config.alphas }}
+      clipboard: ${{ matrix.config.clipboard }}
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
+      branches: '["zmkfirmware/zmk/main"]'
+  
+  merge:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Merge Artifacts
+        uses: actions/upload-artifact/merge@v4
+        with:
+          name: miryoku_zmk_pipar_sool-firmwares
+          pattern: miryoku_zmk-pipar_sool_*
+          delete-merged: true
