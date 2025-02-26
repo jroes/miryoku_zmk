@@ -2,6 +2,6 @@
 # https://github.com/manna-harbour/miryoku
 
 outboard_repository=jroes/jons_keyb_dongle
-outboard_ref=master
+outboard_ref=main
 outboard_from=config/boards/shields/jons_keyb_dongle
 outboard_to=boards/shields/jons_keyb_dongle
