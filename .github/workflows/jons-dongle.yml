@@ -9,5 +9,5 @@ jobs:
     secrets: inherit
     with:
       board: '["seeeduino_xiao_ble"]'
-      shield: '["jons_keyb_dongle"]'
+      shield: '["jons_keyb"]'
       kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
