@@ -4,7 +4,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
-      flavor = "balanced";
+      flavor = "hold-preferred";
       tapping-term-ms = <HM_TAPPING_TERM>;
       quick-tap-ms = <HM_QUICK_TAP>;
       require-prior-idle-ms = <HM_PRIOR_IDLE>;
@@ -15,7 +15,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       bindings = <&kp>, <&kp>;
-      flavor = "balanced";
+      flavor = "hold-preferred";
       tapping-term-ms = <HM_TAPPING_TERM>;
       quick-tap-ms = <HM_QUICK_TAP>;
       require-prior-idle-ms = <HM_PRIOR_IDLE>;
